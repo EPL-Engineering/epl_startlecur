@@ -1,0 +1,4 @@
+elements-dir ./foot
+schematics hidden-magic.sch power-Simple.sch  startle\ optical\ simulator-v1.sch
+output-name optical
+gsch2pcb:use-m4:            yes

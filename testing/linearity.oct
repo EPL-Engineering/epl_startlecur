@@ -1,0 +1,58 @@
+clc;
+data = load("-ascii", "data.csv")
+disp("Original Data");
+Sx = sum(data(:,1).^2)-((sum(data(:,1))^2)/length(data(:,1)))
+Sy = sum(data(:,2).^2)-((sum(data(:,2))^2)/length(data(:,2)))
+Sxy = sum(data(:,1).*data(:,2))-((sum(data(:,1))*sum(data(:,2)))/length(data(:,1)))
+linearity = Sxy / (sqrt(Sx) * sqrt(Sy))
+disp("Unit 2\t");
+disp(linearity);
+polyfit(data(:,1), data(:,2), 1);
+
+
+Sx = sum(data(:,1).^2)-((sum(data(:,1))^2)/length(data(:,1)))
+Sy = sum(data(:,3).^2)-((sum(data(:,3))^2)/length(data(:,3)))
+Sxy = sum(data(:,1).*data(:,3))-((sum(data(:,1))*sum(data(:,3)))/length(data(:,1)))
+linearity = Sxy / (sqrt(Sx) * sqrt(Sy))
+disp("Unit 1\t");
+disp(linearity);
+polyfit(data(:,1), data(:,3), 1)
+
+disp("2011.05.19 Data");
+data = load("-ascii", "data2011.03.16.2.csv");
+Sx = sum(data(:,1).^2)-((sum(data(:,1))^2)/length(data(:,1)));
+Sy = sum(data(:,2).^2)-((sum(data(:,2))^2)/length(data(:,2)));
+Sxy = sum(data(:,1).*data(:,2))-((sum(data(:,1))*sum(data(:,2)))/length(data(:,1)));
+linearity = Sxy / (sqrt(Sx) * sqrt(Sy));
+disp("Unit 2\t");
+disp(linearity);
+#m = (length(data(:,1)) * sum(data(:,1).*data(:,2))  - (sum(data(:,1)).*sum(data(:,2)))) / (length(data(:,1)) * sum((data(:,1).^2)) - (sum(data(:,1)))^2)
+#b = (sum(data(:,2)) - m * sum(data(:,1))) / length(data(:,1))
+disp("m, b, y-int");
+linebest = polyfit(data(:,1), data(:,2), 1);
+#m
+disp(linebest(1,1));
+#b
+disp(linebest(1,2));
+#y intercept
+disp(-linebest(1,2)/linebest(1,1));
+
+data = load("-ascii", "data2011.03.16.1.csv");
+Sx = sum(data(:,1).^2)-((sum(data(:,1))^2)/length(data(:,1)));
+Sy = sum(data(:,2).^2)-((sum(data(:,2))^2)/length(data(:,2)));
+Sxy = sum(data(:,1).*data(:,2))-((sum(data(:,1))*sum(data(:,2)))/length(data(:,1)));
+linearity = Sxy / (sqrt(Sx) * sqrt(Sy));
+disp("Unit 1\t");
+disp(linearity);
+#m = (length(data(:,1)) * sum(data(:,1).*data(:,2))  - (sum(data(:,1)).*sum(data(:,2)))) / (length(data(:,1)) * sum((data(:,1).^2)) - (sum(data(:,1)))^2)
+#b = (sum(data(:,2)) - m * sum(data(:,1))) / length(data(:,1))
+disp("m, b, y-int");
+linebest = polyfit(data(:,1), data(:,2), 1);
+#m
+disp(linebest(1,1));
+#b
+disp(linebest(1,2));
+#y intercept
+disp(-linebest(1,2)/linebest(1,1));
+
+

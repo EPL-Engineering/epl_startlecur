@@ -1,0 +1,19 @@
+clc;
+disp("2011.05.19 Data");
+data = load("-ascii", "data2011.03.16.2.csv");
+disp("Unit 2\t");
+disp("m, b, y-int");
+linebest = polyfit(data(:,1), data(:,2), 1);
+disp(linebest(1,1));
+disp(linebest(1,2));
+disp(-linebest(1,2)/linebest(1,1));
+
+data = load("-ascii", "data2011.03.16.1.csv");
+disp("Unit 1\t");
+disp("m, b, y-int");
+linebest = polyfit(data(:,1), data(:,2), 1);
+disp(linebest(1,1));
+disp(linebest(1,2));
+disp(-linebest(1,2)/linebest(1,1));
+
+

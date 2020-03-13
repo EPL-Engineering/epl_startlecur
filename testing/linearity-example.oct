@@ -1,0 +1,14 @@
+clc;
+
+data = load("-ascii", "example.csv")
+Sx = sum(data(:,1).^2)-((sum(data(:,1))^2)/length(data(:,1)))
+Sy = sum(data(:,2).^2)-((sum(data(:,2))^2)/length(data(:,2)))
+Sxy = sum(data(:,1).*data(:,2))-((sum(data(:,1))*sum(data(:,2)))/length(data(:,1)))
+linearity = Sxy / (sqrt(Sx) * sqrt(Sy))
+disp("Unit 1\t");
+disp(linearity);
+m = (length(data(:,1)) * sum(data(:,1).*data(:,2))  - (sum(data(:,1)).*sum(data(:,2)))) / (length(data(:,1)) * sum((data(:,1).^2)) - (sum(data(:,1)))^2)
+b = (sum(data(:,2)) - m * sum(data(:,1))) / length(data(:,1))
+
+
+

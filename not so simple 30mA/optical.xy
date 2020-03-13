@@ -1,0 +1,48 @@
+# $Id$
+# PcbXY Version 1.0
+# Date: Tue Nov 18 22:01:31 2014 UTC
+# Author: 
+# Title: (unknown) - PCB X-Y
+# RefDes, Description, Value, X, Y, rotation, top/bottom
+# X,Y in mil.  rotation in degrees.
+# --------------------------------------------
+C7,"RCY100","0.1uF",4250.00,835.00,0,top
+CONN2,"AMPHENOL_BNC_31-5431-short","unknown",2550.00,2080.00,270,top
+CONN3,"AMPHENOL_BNC_31-5431-short","unknown",3925.00,2080.00,270,top
+R1,"ACY400","100K",2525.00,1135.00,0,top
+Q1,"TO92","unknown",2450.00,1635.00,0,top
+C1,"RCY100","0.1uF",2700.00,1635.00,0,top
+C5,"RCY100","0.1uF",3075.00,1335.00,0,top
+D2,"ALF400","unknown",2075.00,1510.00,180,top
+C2,"RCY100","30pF",2075.00,1885.00,0,top
+R6,"ACY400","4.7M",2075.00,1635.00,0,top
+R4,"ACY400","100K",2075.00,1735.00,0,top
+TP5,"JUMPER1","unknown",1725.00,1510.00,0,top
+R3,"ACY400","82.5",2550.00,1435.00,180,top
+R2,"ACY400","100K",2825.00,1235.00,90,top
+TP7,"JUMPER1","unknown",2975.00,1635.00,0,top
+R8,"ACY400","30K",1550.00,1085.00,0,top
+R5,"ACY400","100K",1550.00,1235.00,0,top
+D1,"ALF400","unknown",1550.00,785.00,180,top
+R9,"ACY400","100K",1550.00,935.00,0,top
+U1,"DIP8","unknown",2025.00,1185.00,90,top
+TP4,"JUMPER1","unknown",2325.00,1235.00,0,top
+C6,"RCY100","0.1uF",3825.00,1535.00,0,top
+R10,"ACY400","49.9",3425.00,1785.00,0,top
+U2,"DIP8","unknown",3425.00,1485.00,90,top
+C9,"RCY100","0.1uF",3550.00,835.00,0,top
+C8,"RCY100","0.1uF",4250.00,1135.00,0,top
+U3,"DIP8","unknown",3900.00,985.00,90,top
+CONN1,"AMPHENOL_BNC_31-5431-short","unknown",1550.00,2080.00,270,top
+C4,"RCY100P","4.7uF",1055.00,1325.00,0,top
+C3,"RCY100P","4.7uF",1055.00,1625.00,0,top
+CONN5,"JUMPER4","unknown",545.00,775.00,0,top
+S1,"CK_7201SYAQE.fp","unknown",575.00,1978.75,270,top
+R7,"ACY400","4.7K",2975.00,2065.00,90,top
+TP2,"JUMPER1","unknown",3450.00,1065.00,0,top
+R11,"ACY400","100",4002.00,1560.00,90,top
+TP8,"JUMPER1","unknown",1145.00,1880.00,0,top
+TP3,"JUMPER1","unknown",1100.00,990.00,0,top
+R12,"ACY400","4.99K",3415.00,1935.00,0,top
+Z1,"SOD123","unknown",2760.00,1900.00,270,bottom
+TP1,"JUMPER1","unknown",3260.00,2205.00,0,top

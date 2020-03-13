@@ -1,0 +1,4 @@
+elements-dir ./foot
+schematics howland-v2.0.5.sch additions-v1.0.0.sch hidden-magic.sch
+output-name current-howland
+gsch2pcb:use-m4:            yes

@@ -1,0 +1,34 @@
+# Date: Tue Nov 18 22:01:31 2014 UTC
+# Author: Evan Foss
+# Title: Not so Simple 30mA Startle Optical Stimulator
+# --------------------------------------------
+#Quantity	Footprint			Value		Refdes					Vendor Part #		Digikey Part #		Mouser Part #		Newark Part #	Description
+6		RCY100				0.1uF		C7,C1,C5,C6,C9,C8			C315C104M5U5TA		399-4151-ND		80-C315C104M5U		39K6432		Capacitor, 0.1uF, 50V, Ceramic
+3		AMPHENOL_BNC_31-5431-short	31-5431		CONN2,CONN3,CONN1			31-5431			ARF1065-ND		523-31-5431		73K1441		BNC Board & Panel Mount
+5		ACY400				100K		R1,R4,R2,R5,R9				PTF56100K00BZEB		PTF100KDCT-ND							100K OHM .1% 5 PPM 1/8W
+1		TO92				2N4401		Q1					2N4401			2N4401-ND							TRANS NPN 40V 0.6A TO-92
+2		ALF400				1N4148		D2,D1					1N4148			1N4148TACT-ND							SMALL SIG 100V 0.2A DO35
+1		RCY100				30pF		C2					-			-			-			-		See Note #2
+1		ACY400				4.7M		R6					RNV14FAL4M70		RNV14FAL4M70CT-ND						Metal Film .25W 4.7M OHM 1%
+7		JUMPER1				TestPoint	TP5,TP7,TP4,TP2,TP8,TP3,TP1		T49/M			V1076-ND		574-T49/M		38F1331		Wire Wrap Post from Vector Electronics
+1		ACY400				82.5		R3					RNF14FTD82R5		RNF14FTD82R5CT-ND						82.5 OHM 1/4W Metal Film 1%
+1		ACY400				30K		R8					RNMF14FTC30K0		S30KCACT-ND							30K OHM 1/4W Metal Film 1%
+3		DIP8				TL032		U1					TL032AIP		296-7147-5-ND							JFET 1.1MHz Dual Operational Amplifier
+1		DIP8				INA129		U2					INA129PA                INA129PA-ND             595-INA129PA            78K5993         Instrumentation Operational Amplifier 1.3MHz GBW
+1		DIP8				LF356		U3					LF356			LF356N/NOPB-ND		926-LF356N/NOPB		41K2547		Opamp, Mono JFET, unity gain stable, able to drive capacitive cable load
+1		ACY400				49.9		R10																49.9 Ohm 1% Metal Film Resistor
+2		RCY100P				100uF		C4,C3					ECA-1CM101		P5138-ND							100uF Electrolytic >=16V (I should have used ECA-1CM101)
+1		JUMPER4				See_Note#1	CONN5																See Note #1
+1		CK_7201SYAQE.fp			7201SYAQE	S1					7201SYAQE		CKN1480-ND		611-7201-100		40M6032		Switch, DPDT Toggle, PCB mount, Chassis mount, Right Angle
+1		ACY400				4.7K		R7					RNMF14FTC4K70		S4.7KCACT-ND		271-4.7K-RC		59C1933		Resistor, 4.7K Ohms, 1/4W, Metal Film
+1		ACY400				100		R11					MFR-25FBF-100R		100XBK-ND		71-CMF55100R00FKEB	26R4017		Resistor, 100 Ohms, 1/4W, Metal Film
+1		ACY400				4.99K		R12					RNF14FTD4K99		RNF14FTD4K99CT-ND	
+1		SOD123				DDZ9678-7	Z1					DDZ9678-7		DDZ9678DICT-ND		621-DDZ9678-7 		23T5577		Zener Diode 1.8V 500mW
+
+
+
+NOTE#1: The power connector CONN5 is not just a connector. It is a connector on the PCB that goes to another one on a cable which runs to a PCB that goes to the backplane of the EPL (Vector) Subrack or if you want directly to a Mini Hex 9 or other power connector.
+NOTE#2: The capacitor C2 is an optional thing. As 30pF is not a value set in stone there is no part number I can give. It is there for tuning and as yet I have not needed it.
+
+
+

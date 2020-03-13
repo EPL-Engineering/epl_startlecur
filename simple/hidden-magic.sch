@@ -1,0 +1,94 @@
+v 20100214 2
+C 40000 40000 0 0 0 title-C.sym
+T 41100 40400 9 25 1 0 0 0 2
+This is where I deal with some issues in the netlisting of 
+components with not easily graphically articulated properties.
+N 47000 50400 48500 50400 4
+{
+T 47000 50400 5 10 1 1 0 0 1
+netname=Chassis
+}
+N 45000 50000 53000 50000 4
+{
+T 45000 50000 5 10 1 1 0 0 1
+netname=Chassis
+}
+C 46000 50300 1 0 0 7201SYAQE-switch-dpdt-pt2.sym
+{
+T 46410 51150 5 10 0 0 0 0 1
+device=Dual_Two_Way_Switch
+T 46510 51100 5 10 1 1 0 3 1
+refdes=S1
+T 46700 52000 5 10 0 0 0 0 1
+symversion=1.0
+T 46495 50950 5 10 1 1 0 3 1
+model-name=7201SYAQE
+T 46495 50750 5 10 1 1 0 3 1
+footprint=CK_7201SYAQE.fp
+}
+N 46000 50400 45500 50400 4
+{
+T 46000 50400 5 10 1 1 0 0 1
+netname=Chassis
+}
+N 45500 50400 45500 50000 4
+{
+T 45500 50400 5 10 1 1 0 0 1
+netname=Chassis
+}
+N 47500 50400 47500 50000 4
+{
+T 47500 50400 5 10 1 1 0 0 1
+netname=Chassis
+}
+C 44200 49900 1 0 0 input-1.sym
+{
+T 44200 50200 5 10 0 0 0 0 1
+device=INPUT
+}
+C 48500 50300 1 0 0 AMPHENOL_BNC_31-5431-pt2.sym
+{
+T 48910 51150 5 10 0 0 0 0 1
+device=Dual_Two_Way_Switch
+T 49010 51100 5 10 1 1 0 3 1
+refdes=CONN1
+T 49200 52000 5 10 0 0 0 0 1
+symversion=1.0
+T 48995 50950 5 10 1 1 0 3 1
+model-name=AMPHENOL_BNC_31-5431
+T 48995 50750 5 10 1 1 0 3 1
+footprint=AMPHENOL_BNC_31-5431-short
+}
+N 49500 50400 51500 50400 4
+N 50500 50400 50500 50000 4
+C 51500 50300 1 0 0 AMPHENOL_BNC_31-5431-pt2.sym
+{
+T 51910 51150 5 10 0 0 0 0 1
+device=Dual_Two_Way_Switch
+T 52010 51100 5 10 1 1 0 3 1
+refdes=CONN2
+T 52200 52000 5 10 0 0 0 0 1
+symversion=1.0
+T 51995 50950 5 10 1 1 0 3 1
+model-name=AMPHENOL_BNC_31-5431
+T 51995 50750 5 10 1 1 0 3 1
+footprint=AMPHENOL_BNC_31-5431-short
+}
+N 52500 50400 53000 50400 4
+N 53000 50400 53000 50000 4
+T 55000 40700 14 8 1 0 0 0 1
+Hidden Magic
+T 61900 40100 14 8 1 0 0 6 1
+Designed By: EEF
+T 58900 40100 14 8 1 0 0 0 1
+EEF
+T 58800 40400 14 8 1 0 0 0 1
+1.0
+T 55000 40100 14 8 1 0 0 0 1
+3
+T 56500 40100 14 8 1 0 0 0 1
+3
+T 54900 40400 14 8 1 0 0 0 1
+hidden-magic.sch
+T 61900 40400 14 8 1 0 0 6 1
+Date: 2010_11_18
